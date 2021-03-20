@@ -4,16 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google laning page</title>
+    <title>Google landing page</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: ;
+      }
+      img {
+        position: relative;
+        top: 200px;
+        left: 200px;
+        bottom: ;
+        right: ;
+      }
+      .bottoms {
+        position: ;
+        border-bottom: ;
+        margin-bottom: ;
+      }
+      .carbon {
+        position: fixed;
+        bottom: 100px;
+        left: 250px;
+      }
+      .lucky {
+        position: fixed;
+        bottom: 355px;
+        left: 355px;
+      }
+      .search {
+        position: fixed;
+        bottom: 355px;
+        left: 200px;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="about">About</a>
-        <a href="Store">Store</a>
-        <a href="Gmail">Gmail</a>
-        <a href="Images">Images</a>
-      </nav>
+      <div class="header">
+        <nav>
+          <ul>
+            <li><a class="about" href="about">About</a></li>
+            <li><a class="store" href="Store">Store</a></li>
+            <li><a href="Gmail">Gmail</a></li>
+            <li><a href="Images">Images</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <img
       src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
@@ -22,16 +61,19 @@
     <form id="form">
       <input type="search" id query name="q" />
     </form>
-    <button>Google Search</button>
-    <button>I'm Feeling Lucky</button>
+    <button class="search">Google Search</button>
+    <button class="lucky">I'm Feeling Lucky</button>
     <footer>
-      <a href="#">Carbon neutral since 2007</a>
-      <a href="#">Advertising</a>
-      <a href="#">Bussiness</a>
-      <a href="#">How search works</a>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Settings</a>
+      <div>
+        <a class="carbon" href="#">Carbon neutral since 2007</a>
+        <br />
+        <a class="bottoms" href="#">Advertising</a>
+        <a class="bottoms" href="#">Bussiness</a>
+        <a class="bottoms" href="#">How search works</a>
+        <a class="bottoms" href="#">Privacy</a>
+        <a class="bottoms" href="#">Terms</a>
+        <a class="bottoms" href="#">Settings</a>
+      </div>
     </footer>
   </body>
 </html>
